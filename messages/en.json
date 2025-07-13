@@ -1,0 +1,49 @@
+{
+  "navigation": {
+    "home": "Home",
+    "gcc": "GCC Spec",
+    "korean": "Korean Spec",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Premium Car Catalog",
+    "subtitle": "Discover our exclusive collection of premium vehicles",
+    "featured": "Featured Cars",
+    "viewAll": "View All Cars",
+    "gccSpec": "GCC Specification",
+    "koreanSpec": "Korean Specification",
+    "gccDescription": "Gulf Cooperation Council specification vehicles, perfectly suited for Middle Eastern conditions",
+    "koreanDescription": "Korean specification vehicles with advanced technology and premium features"
+  },
+  "car": {
+    "price": "Price",
+    "mileage": "Mileage",
+    "year": "Year",
+    "fuelType": "Fuel Type",
+    "transmission": "Transmission",
+    "engineSize": "Engine Size",
+    "color": "Color",
+    "features": "Features",
+    "contactDealer": "Contact Dealer",
+    "viewDetails": "View Details",
+    "km": "km",
+    "aed": "AED"
+  },
+  "filters": {
+    "all": "All",
+    "brand": "Brand",
+    "priceRange": "Price Range",
+    "year": "Year",
+    "fuelType": "Fuel Type",
+    "transmission": "Transmission",
+    "clearFilters": "Clear Filters",
+    "applyFilters": "Apply Filters"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "noResults": "No cars found",
+    "backToHome": "Back to Home"
+  }
+}

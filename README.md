@@ -1,35 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Premium Car Catalog
 
-## Getting Started
+A modern, bilingual car catalog application built with Next.js 15, featuring both English and Arabic language support with RTL layout. Perfect for car dealers and showrooms to showcase their inventory.
 
-First, run the development server:
+## 🚗 Features
 
+- **Bilingual Support**: Full English and Arabic language support with RTL layout
+- **Mobile-First Design**: Optimized for mobile devices (90% of users)
+- **Car Categories**: Support for GCC and Korean specification vehicles
+- **Modern UI**: Clean, professional design with Tailwind CSS
+- **Database Integration**: Powered by Supabase for reliable data storage
+- **Image Gallery**: High-quality car images with primary/secondary views
+- **Detailed Car Pages**: Comprehensive car specifications and details
+- **Touch-Friendly**: Optimized for mobile touch interactions
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS
+- **Database**: Supabase (PostgreSQL)
+- **Icons**: Lucide React
+- **Deployment**: Ready for Vercel deployment
+
+## 📱 Pages
+
+1. **Home Page** (`/en` or `/ar`)
+   - Featured cars showcase
+   - Category navigation (GCC/Korean)
+   - Bilingual content
+
+2. **Category Pages** (`/en/gcc` or `/en/korean`)
+   - Filtered car listings by specification
+   - Grid layout with car cards
+
+3. **Car Detail Page** (`/en/cars/[id]`)
+   - Detailed car information
+   - Image gallery
+   - Specifications table
+   - Contact dealer section
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Supabase account
+
+### Installation
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📊 Database Schema
 
-## Learn More
+The application uses the following main tables:
 
-To learn more about Next.js, take a look at the following resources:
+- **cars**: Main car information (brand, model, year, price, etc.)
+- **car_translations**: Multilingual content (title, description, features)
+- **car_images**: Car photos with primary/secondary designation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Internationalization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **English**: `/en/*` routes
+- **Arabic**: `/ar/*` routes with RTL layout
+- Language switcher in navigation
+- Localized content and formatting
 
-## Deploy on Vercel
+## 📱 Mobile Optimization
+
+- Responsive grid layouts
+- Touch-friendly button sizes (44px minimum)
+- Optimized images
+- Fast loading times
+- Mobile-first CSS approach
+
+## 🚀 Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
