@@ -5,9 +5,10 @@ import { getRequestConfig } from 'next-intl/server';
 export const locales = ['en', 'ar'] as const;
 export type Locale = typeof locales[number];
 
+// @ts-expect-error - next-intl type compatibility issue
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  if (!locales.includes(locale as Locale)) notFound();
 
   return {
     messages: (await import(`../../messages/${locale}.json`)).default

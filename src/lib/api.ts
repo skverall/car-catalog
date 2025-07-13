@@ -1,4 +1,4 @@
-import { supabase, Car, CarWithDetails, CarSpec, LanguageCode } from './supabase';
+import { supabase, CarWithDetails, CarSpec } from './supabase';
 
 export async function getCars(spec?: CarSpec): Promise<CarWithDetails[]> {
   let query = supabase

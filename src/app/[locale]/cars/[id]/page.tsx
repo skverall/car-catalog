@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getTranslations } from 'next-intl/server';
 import { getCarById } from '@/lib/api';
 import { LanguageCode } from '@/lib/supabase';
 import {

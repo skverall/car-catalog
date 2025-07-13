@@ -20,7 +20,7 @@ interface CarFiltersProps {
   spec?: CarSpec;
 }
 
-export default function CarFilters({ brands, onFiltersChange, spec }: CarFiltersProps) {
+export default function CarFilters({ brands, onFiltersChange }: CarFiltersProps) {
   const t = useTranslations('filters');
   const [isOpen, setIsOpen] = useState(false);
   const [filters, setFilters] = useState<FilterState>({
